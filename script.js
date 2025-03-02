@@ -23,7 +23,7 @@ document.getElementById("theme-btn").addEventListener("click", function () {
    }
 });
 
-// discover
+// discover click
 
 const discoverBtn = document.getElementById("discover");
 
@@ -33,3 +33,98 @@ discoverBtn.onclick = function(){
 
 
 //btns on
+const task = document.getElementById("task");
+const taskDone = document.getElementById("task-done");
+const notifications = document.getElementById('notifications');
+
+
+document.getElementById("btn1").addEventListener("click", function () {
+const btn1 = document.getElementById("btn1");
+if(btn1.classList.contains("btn-primary")){
+    btn1.classList.remove("btn-primary");
+    btn1.classList.remove("bg-[#3752FD]");
+    btn1.classList.add("text-white");
+    btn1.classList.add("bg-blue-200");
+    task.textContent = parseInt(task.textContent) - 1;
+    taskDone.textContent = parseInt(taskDone.textContent) + 1;
+
+    notifications.innerHTML += `<div class="bg-[#F4F7FF] p-2.5 rounded-lg">
+            <p class="font-normal text-lg">
+              You have Complete The Task Add Dark Mode at 12:48:15 PM
+            </p>
+          </div>`;
+}
+})
+document.getElementById("btn2").addEventListener("click", function () {
+const btn1 = document.getElementById("btn1");
+if(btn2.classList.contains("btn-primary")){
+    btn2.classList.remove("btn-primary");
+    btn2.classList.remove("bg-[#3752FD]");
+    btn2.classList.add("text-white");
+    btn2.classList.add("bg-blue-200");
+    task.textContent = parseInt(task.textContent) - 1;
+    taskDone.textContent = parseInt(taskDone.textContent) + 1;
+    notifications.innerHTML += `<div class="bg-[#F4F7FF] p-2.5 rounded-lg">
+            <p class="font-normal text-lg">
+              You have Complete The Task Add Dark Mode at 12:48:15 PM
+            </p>
+          </div>`;
+}
+})
+document.getElementById("btn3").addEventListener("click", function () {
+const btn3 = document.getElementById("btn3");
+if(btn3.classList.contains("btn-primary")){
+    btn3.classList.remove("btn-primary");
+    btn3.classList.remove("bg-[#3752FD]");
+    btn3.classList.add("text-white");
+    btn3.classList.add("bg-blue-200");
+    task.textContent = parseInt(task.textContent) - 1;
+    taskDone.textContent = parseInt(taskDone.textContent) + 1;
+
+    notifications.innerHTML += `<div class="bg-[#F4F7FF] p-2.5 rounded-lg">
+            <p class="font-normal text-lg">
+              You have Complete The Task Add Dark Mode at 12:48:15 PM
+            </p>
+          </div>`;
+}
+})
+document.getElementById("btn4").addEventListener("click", function () {
+const btn4 = document.getElementById("btn4");
+if(btn4.classList.contains("btn-primary")){
+    btn4.classList.remove("btn-primary");
+    btn4.classList.remove("bg-[#3752FD]");
+    btn4.classList.add("text-white");
+    btn4.classList.add("bg-blue-200");
+    task.textContent = parseInt(task.textContent) - 1;
+    taskDone.textContent = parseInt(taskDone.textContent) + 1;
+    notifications.innerHTML += `<div class="bg-[#F4F7FF] p-2.5 rounded-lg">
+            <p class="font-normal text-lg">
+              You have Complete The Task Add Dark Mode at 12:48:15 PM
+            </p>
+          </div>`;
+}
+})
+document.getElementById("btn5").addEventListener("click", function () {
+const btn5 = document.getElementById("btn5");
+if(btn5.classList.contains("btn-primary")){
+    btn5.classList.remove("btn-primary");
+    btn5.classList.remove("bg-[#3752FD]");
+    btn5.classList.add("text-white");
+    btn5.classList.add("bg-blue-200");
+    task.textContent = parseInt(task.textContent) - 1;
+    taskDone.textContent = parseInt(taskDone.textContent) + 1;
+    notifications.innerHTML += `<div class="bg-[#F4F7FF] p-2.5 rounded-lg">
+            <p class="font-normal text-lg">
+              You have Complete The Task Add Dark Mode at 12:48:15 PM
+            </p>
+          </div>`;
+}
+})
+
+
+// clear log
+
+document.getElementById("clear").addEventListener("click", function () {
+    notifications.innerHTML = "";
+})
+

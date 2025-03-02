@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-[#f4f7ff]  text-black font-[poppins]">
+  <body class="bg-[#f4f7ff]  text-black font-[poppins] h-screen">
     <header class="pt-6">
       <nav
         class="max-w-384 bg-white mx-auto flex justify-between mb-6 rounded-xl items-center p-4.5 "
@@ -30,7 +30,7 @@
             class="flex checked bg-[#f4f7ff] rounded-full mr-9.5 items-center"
           >
             <img src="./assets/checkbox.png" alt="" class="p-3" />
-            <h1 class="font-bold pr-4 text-2xl">23</h1>
+            <h1 class="font-bold pr-4 text-2xl" id="task-done">23</h1>
           </div>
           <div class="mr-6 rounded-full p-2 bg-[#f4f7ff]">
             <img src="./assets/theme-btn.png" alt="" id="theme-btn" />
@@ -51,8 +51,8 @@
                 class="p-4.5 bg-white rounded-full"
               />
               <p class="text-[#00303C]/80 font-medium">
-                Task Assigned<span class="text-black text-4xl font-bold"
-                  ><br />05</span
+                Task Assigned<br /><span class="text-black text-4xl font-bold" id="task"
+                  >5</span
                 >
               </p>
               <br />
@@ -90,7 +90,7 @@
                   <div class="flex justify-center mt-6.5">
                     <p class="text-sm font-normal text-black/70">Deadline<br><span class="font-medium text-lg text-black">21 March 2025</span></p>
                     <div class="justify-end card-actions">
-                        <button class="btn btn-primary bg-[#3752FD] font-normal">Completed</button>
+                        <button class="btn btn-primary bg-[#3752FD] font-normal border-0" id="btn1">Completed</button>
                       </div>
                   </div>
                 </div>
@@ -103,7 +103,7 @@
                   <div class="flex justify-center mt-6.5">
                     <p class="text-sm font-normal text-black/70">Deadline<br><span class="font-medium text-lg text-black">21 March 2025</span></p>
                     <div class="justify-end card-actions">
-                        <button class="btn bg-blue-200 text-white font-normal">Completed</button>
+                        <button class="btn bg-blue-200 text-white font-normal border-0">Completed</button>
 
                       </div>
                   </div>
@@ -117,7 +117,7 @@
                   <div class="flex justify-center mt-6.5">
                     <p class="text-sm font-normal text-black/70">Deadline<br><span class="font-medium text-lg text-black">21 March 2025</span></p>
                     <div class="justify-end card-actions">
-                        <button class="btn btn-primary bg-[#3752FD] font-normal">Completed</button>
+                        <button class="btn btn-primary bg-[#3752FD] font-normal border-0" id="btn2">Completed</button>
                       </div>
                   </div>
                 </div>
@@ -133,7 +133,7 @@
                   <div class="flex justify-center mt-6.5">
                     <p class="text-sm font-normal text-black/70">Deadline<br><span class="font-medium text-lg text-black">21 March 2025</span></p>
                     <div class="justify-end card-actions">
-                        <button class="btn btn-primary bg-[#3752FD] font-normal">Completed</button>
+                        <button class="btn btn-primary bg-[#3752FD] font-normal border-0" id="btn3">Completed</button>
                       </div>
                   </div>
                 </div>
@@ -146,7 +146,7 @@
                   <div class="flex justify-center mt-6.5">
                     <p class="text-sm font-normal text-black/70">Deadline<br><span class="font-medium text-lg text-black">21 March 2025</span></p>
                     <div class="justify-end card-actions">
-                        <button class="btn btn-primary bg-[#3752FD] font-normal">Completed</button>
+                        <button class="btn btn-primary bg-[#3752FD] font-normal border-0" id="btn4">Completed</button>
                       </div>
                   </div>
                 </div>
@@ -159,7 +159,7 @@
                   <div class="flex justify-center mt-6.5">
                     <p class="text-sm font-normal text-black/70">Deadline<br><span class="font-medium text-lg text-black">21 March 2025</span></p>
                     <div class="justify-end card-actions">
-                        <button class="btn btn-primary bg-[#3752FD] font-normal">Completed</button>
+                        <button class="btn btn-primary bg-[#3752FD] font-normal border-0" id="btn5">Completed</button>
                       </div>
                   </div>
                 </div>
@@ -167,7 +167,7 @@
           </div>
         </section>
       <!-- right -->
-      <section class="w-93 bg-white rounded-2xl pl-8 pr-4.5 pb-4 grid justify-items-center mb-15">
+      <section class="w-93 bg-white rounded-2xl pl-8 pr-4.5 pb-4 mb-15">
         <div class="w-full flex flex-col">
           <!-- activity log -->
           <div class="flex flex-col justify-center items-center mx-auto">
@@ -175,20 +175,20 @@
               <img src="./assets/activity.png" alt="" />
               <p>Activity Log</p>
             </div>
-            <button class="btn bg-[#3752FD] border-0 text-white font-medium">Clear History</button>
+            <button class="btn bg-[#3752FD] border-0 text-white font-medium" id="clear">Clear History</button>
           </div>
           <hr class="border-t-2 border-dashed border-gray-300 my-4">
         </div>
 
 
         <!-- notifications -->
-        <div class="grid gap-7 place-items-start h-[calc(100vh-360px)] ">
+        <div class="grid gap-7 place-items-start " id="notifications">
           <div class="bg-[#F4F7FF] p-2.5 rounded-lg">
             <p class="font-normal text-lg">
               You have Complete The Task Add Dark Mode at 12:48:15 PM
             </p>
           </div>
-
+          </div>
       </section>
     </main>
     <script src="./script.js"></script>
