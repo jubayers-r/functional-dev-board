@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-[#f4f7ff] text-black font-[poppins]">
+  <body class="bg-[#f4f7ff]  text-black font-[poppins]">
     <header class="pt-6">
       <nav
         class="max-w-384 bg-white mx-auto flex justify-between mb-6 rounded-xl items-center p-4.5 "
@@ -33,7 +33,7 @@
             <h1 class="font-bold pr-4 text-2xl">23</h1>
           </div>
           <div class="mr-6 rounded-full p-2 bg-[#f4f7ff]">
-            <img src="./assets/theme-btn.png" alt="" class="" />
+            <img src="./assets/theme-btn.png" alt="" id="theme-btn" />
           </div>
         </div>
       </nav>
@@ -52,7 +52,7 @@
               />
               <p class="text-[#00303C]/80 font-medium">
                 Task Assigned<span class="text-black text-4xl font-bold"
-                  ><br />06</span
+                  ><br />05</span
                 >
               </p>
               <br />
@@ -60,7 +60,7 @@
             <!-- discover -->
             <div
               class="flex bg-linear-to-br from-[#3752FD] to-[#9BA8F8] col-span-2 rounded-2xl py-6 px-10 items-center gap-7"
-            >
+            id="discover">
               <img src="./assets/board.png" alt="" />
               <p class="text-white text-2xl font-medium">
                 Discover Something<br />New Today!
@@ -103,7 +103,8 @@
                   <div class="flex justify-center mt-6.5">
                     <p class="text-sm font-normal text-black/70">Deadline<br><span class="font-medium text-lg text-black">21 March 2025</span></p>
                     <div class="justify-end card-actions">
-                        <button class="btn btn-primary bg-[#3752FD] font-normal">Completed</button>
+                        <button class="btn bg-blue-200 text-white font-normal">Completed</button>
+
                       </div>
                   </div>
                 </div>
@@ -190,5 +191,6 @@
 
       </section>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>
