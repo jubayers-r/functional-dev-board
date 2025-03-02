@@ -36,16 +36,6 @@ discoverBtn.onclick = function () {
   window.location.href = "./blog.html";
 };
 
-//btns
-const task = document.getElementById("task");
-const taskDone = document.getElementById("task-done");
-const notifications = document.getElementById("notifications");
-const task1 = document.getElementById("task1").innerText;
-const task2 = document.getElementById("task2").innerText;
-const task3 = document.getElementById("task3").innerText;
-const task4 = document.getElementById("task4").innerText;
-const task5 = document.getElementById("task5").innerText;
-
 // live time
 let timeNow = "";
 function updateClock() {
@@ -63,6 +53,16 @@ function updateClock() {
 
 setInterval(updateClock, 1000);
 updateClock();
+
+//btns
+const task = document.getElementById("task");
+const taskDone = document.getElementById("task-done");
+const notifications = document.getElementById("notifications");
+const task1 = document.getElementById("task1").innerText;
+const task2 = document.getElementById("task2").innerText;
+const task3 = document.getElementById("task3").innerText;
+const task4 = document.getElementById("task4").innerText;
+const task5 = document.getElementById("task5").innerText;
 
 document.getElementById("btn1").addEventListener("click", function () {
   const btn1 = document.getElementById("btn1");
