@@ -32,10 +32,33 @@ discoverBtn.onclick = function(){
 }
 
 
-//btns on
+//btns
 const task = document.getElementById("task");
 const taskDone = document.getElementById("task-done");
 const notifications = document.getElementById('notifications');
+const task1 = document.getElementById("task1").innerText;
+const task2 = document.getElementById("task2").innerText;
+const task3 = document.getElementById("task3").innerText;
+const task4 = document.getElementById("task4").innerText;
+const task5 = document.getElementById("task5").innerText;
+
+// live time
+let timeNow = '';
+function updateClock() {
+    const now = new Date();
+    let hours = now.getHours();
+    const meridiem = hours < 12 ? 'AM' : 'PM';
+    hours = hours % 12 || 12;
+    hours = hours.toString().padStart(2, 0);
+    const mins = now.getMinutes().toString().padStart(2, 0);
+    const secs = now.getSeconds().toString().padStart(2, 0);
+
+    timeNow = `${hours}:${mins}:${secs} ${meridiem}`;
+    return timeNow;
+}
+
+setInterval(updateClock, 1000);
+updateClock();
 
 
 document.getElementById("btn1").addEventListener("click", function () {
@@ -50,7 +73,7 @@ if(btn1.classList.contains("btn-primary")){
 
     notifications.innerHTML += `<div class="bg-[#F4F7FF] p-2.5 rounded-lg">
             <p class="font-normal text-lg">
-              You have Complete The Task Add Dark Mode at 12:48:15 PM
+              You have Completed The Task ${task1} at ${timeNow}
             </p>
           </div>`;
 }
@@ -66,7 +89,7 @@ if(btn2.classList.contains("btn-primary")){
     taskDone.textContent = parseInt(taskDone.textContent) + 1;
     notifications.innerHTML += `<div class="bg-[#F4F7FF] p-2.5 rounded-lg">
             <p class="font-normal text-lg">
-              You have Complete The Task Add Dark Mode at 12:48:15 PM
+              You have Completed The Task ${task2} at ${timeNow}
             </p>
           </div>`;
 }
@@ -83,7 +106,7 @@ if(btn3.classList.contains("btn-primary")){
 
     notifications.innerHTML += `<div class="bg-[#F4F7FF] p-2.5 rounded-lg">
             <p class="font-normal text-lg">
-              You have Complete The Task Add Dark Mode at 12:48:15 PM
+              You have Completed The Task ${task3} at ${timeNow}
             </p>
           </div>`;
 }
@@ -99,7 +122,7 @@ if(btn4.classList.contains("btn-primary")){
     taskDone.textContent = parseInt(taskDone.textContent) + 1;
     notifications.innerHTML += `<div class="bg-[#F4F7FF] p-2.5 rounded-lg">
             <p class="font-normal text-lg">
-              You have Complete The Task Add Dark Mode at 12:48:15 PM
+              You have Completed The Task ${task4} at ${timeNow}
             </p>
           </div>`;
 }
@@ -115,7 +138,7 @@ if(btn5.classList.contains("btn-primary")){
     taskDone.textContent = parseInt(taskDone.textContent) + 1;
     notifications.innerHTML += `<div class="bg-[#F4F7FF] p-2.5 rounded-lg">
             <p class="font-normal text-lg">
-              You have Complete The Task Add Dark Mode at 12:48:15 PM
+              You have Completed The Task ${task5} at ${timeNow}
             </p>
           </div>`;
 }
@@ -128,3 +151,20 @@ document.getElementById("clear").addEventListener("click", function () {
     notifications.innerHTML = "";
 })
 
+// live date
+const today = new Date();
+const day = today.toLocaleString('en-US', { weekday: 'short' });
+const month = today.toLocaleString('en-US', { month: 'short' });
+const date = today.getDate();
+const year = today.getFullYear();
+
+const fullDate = document.getElementById("date");
+fullDate.innerHTML = `${day} , <br> <span class="font-bold"> ${month} ${date} ${year}</span>`;
+
+// back to desk button
+
+const backBtn = document.getElementById("back-btn");
+
+backBtn.onclick = function(){
+    window.location.href = "./index.html";
+}
