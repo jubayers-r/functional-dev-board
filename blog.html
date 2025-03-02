@@ -25,7 +25,8 @@
             Dev<span class="font-bold">Board</span>
           </h1>
         </div>
-        <button class="btn btn-primary bg-[#3752FD] font-normal border-0" id="back-btn">Back to Desk</button>
+        <button onclick="window.location.href='index.html'" class="btn btn-primary bg-[#3752FD] text-white px-4 py-2 rounded mr-6 hover:bg-[#2241fd] border-0">Back to Desk</button>
+            </nav>
        </header>
        <h1 class="text-center text-2xl font-bold pb-4">Blogs</h1>
        <!-- q cards -->
@@ -33,29 +34,44 @@
             <div class="w-386 bg-white mx-auto rounded-lg">
                 <h1 class="p-3 text-2xl font-bold">Question–1: What are the different ways to select an element in the DOM?</h1>
                 <hr class="border-t-2 border-dashed border-gray-300 my-4">
-                <p class="p-3 text-2xl text-black/50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora tenetur illum illo hic, ipsum officia obcaecati culpa vel pariatur repellendus quibusdam.</p>
+                <p class="p-3 text-2xl text-black/50">DOM can be selected in 5 ways. <br>
+
+                    getElementsByTagName() <br>
+                    getElementsByClassName() <br>
+                    getElementById() <br>
+                    querySelector() <br>
+                    querySelectorAll()
+
+                  </p>
             </div>
             <div class="w-386 bg-white mx-auto rounded-lg">
                 <h1 class="p-3 text-2xl font-bold">Question–2: What is the difference between innerHTML, innerText, and textContent?</h1>
                 <hr class="border-t-2 border-dashed border-gray-300 my-4">
-                <p class="p-3 text-2xl text-black/50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora tenetur illum illo hic, ipsum officia obcaecati culpa vel pariatur repellendus quibusdam.</p>
+                <p class="p-3 text-2xl text-black/50">innerHTML is used to set or get HTML content of an element. <br>
+                  innerText is used to set or get text content of an element. <br>
+                  innerContent is used to set or get text content of a specific node and its decendents.
+                </p>
             </div>
             <div class="w-386 bg-white mx-auto rounded-lg">
                 <h1 class="p-3 text-2xl font-bold">Question–3: What is event delegation in the DOM?
                 </h1>
                 <hr class="border-t-2 border-dashed border-gray-300 my-4">
-                <p class="p-3 text-2xl text-black/50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora tenetur illum illo hic, ipsum officia obcaecati culpa vel pariatur repellendus quibusdam.</p>
+                <p class="p-3 text-2xl text-black/50">Event delegation is the process of using event bubbling to handle events at a higher level in the DOM than the element on which the event originated.</p>
             </div>
             <div class="w-386 bg-white mx-auto rounded-lg">
                 <h1 class="p-3 text-2xl font-bold">Question–4: What is event bubbling in the DOM?
                 </h1>
                 <hr class="border-t-2 border-dashed border-gray-300 my-4">
-                <p class="p-3 text-2xl text-black/50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora tenetur illum illo hic, ipsum officia obcaecati culpa vel pariatur repellendus quibusdam.</p>
+                <p class="p-3 text-2xl text-black/50">Event bubbling is a type of DOM event propagation which allows centralized event management by propagating events up the DOM tree, simplifying handling across hierarchical structures.</p>
             </div>
             <div class="w-386 bg-white mx-auto rounded-lg">
                 <h1 class="p-3 text-2xl font-bold">Question–5: How do you create, add, and remove elements using JavaScript?</h1>
                 <hr class="border-t-2 border-dashed border-gray-300 my-4">
-                <p class="p-3 text-2xl text-black/50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora tenetur illum illo hic, ipsum officia obcaecati culpa vel pariatur repellendus quibusdam.</p>
+                <p class="p-3 text-2xl text-black/50">this is how elements can be created, added and removed using javascript: <br> element = document.getElementById("btn"); <br>
+                  const node = document.createElement("div"); <br>
+                  node.textContent = "This is a new div"; <br>
+                  element.appendChild(node); <br>
+                  element.remove();</p>
             </div>
         </div>
         <script src="./script.js"></script>
