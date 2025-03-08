@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
-    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./src/output.css" />
     <link rel="stylesheet" href="./src/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,11 +12,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-</head>
-<body class="bg-[#f4f7ff] text-black font-[poppins]">
+  </head>
+  <body class="bg-[#f4f7ff] text-black font-[poppins]">
     <header class="pt-6">
       <nav
-        class="max-w-384 bg-white mx-auto flex justify-between mb-6 rounded-xl items-center p-4.5 "
+        class="max-w-384 bg-white mx-auto flex justify-between mb-6 rounded-xl items-center p-4.5"
       >
         <!-- logo -->
         <div class="ml-6 flex items-center gap-2.5">
@@ -25,56 +25,85 @@
             Dev<span class="font-bold">Board</span>
           </h1>
         </div>
-        <button onclick="window.location.href='index.html'" class="btn btn-primary bg-[#3752FD] text-white px-4 py-2 rounded mr-6 hover:bg-[#2241fd] border-0">Back to Desk</button>
-            </nav>
-       </header>
-       <h1 class="text-center text-2xl font-bold pb-4">Blogs</h1>
-       <!-- q cards -->
-        <div class="grid gap-4 pb-10">
-            <div class="w-386 bg-white mx-auto rounded-lg">
-                <h1 class="p-3 text-2xl font-bold">Question–1: What are the different ways to select an element in the DOM?</h1>
-                <hr class="border-t-2 border-dashed border-gray-300 my-4">
-                <p class="p-3 text-2xl text-black/50">DOM can be selected in 5 ways. <br>
+        <button
+          onclick="window.location.href='index.html'"
+          class="btn btn-primary bg-[#3752FD] text-white px-4 py-2 rounded mr-6 hover:bg-[#2241fd] border-0"
+        >
+          Back to Desk
+        </button>
+      </nav>
+    </header>
+    <h1 class="text-center text-2xl font-bold pb-4">Blogs</h1>
+    <!-- q cards -->
+    <div class="grid gap-4 pb-10">
+      <div class="w-386 bg-white mx-auto rounded-lg">
+        <h1 class="p-3 text-2xl font-bold">
+          Question–1: What are the different ways to select an element in the
+          DOM?
+        </h1>
+        <hr class="border-t-2 border-dashed border-gray-300 my-4" />
+        <p class="p-3 text-2xl text-black/50">
+          DOM can be selected in 5 ways. <br />
 
-                    getElementsByTagName() <br>
-                    getElementsByClassName() <br>
-                    getElementById() <br>
-                    querySelector() <br>
-                    querySelectorAll()
-
-                  </p>
-            </div>
-            <div class="w-386 bg-white mx-auto rounded-lg">
-                <h1 class="p-3 text-2xl font-bold">Question–2: What is the difference between innerHTML, innerText, and textContent?</h1>
-                <hr class="border-t-2 border-dashed border-gray-300 my-4">
-                <p class="p-3 text-2xl text-black/50">innerHTML is used to set or get HTML content of an element. <br>
-                  innerText is used to set or get text content of an element. <br>
-                  innerContent is used to set or get text content of a specific node and its decendents.
-                </p>
-            </div>
-            <div class="w-386 bg-white mx-auto rounded-lg">
-                <h1 class="p-3 text-2xl font-bold">Question–3: What is event delegation in the DOM?
-                </h1>
-                <hr class="border-t-2 border-dashed border-gray-300 my-4">
-                <p class="p-3 text-2xl text-black/50">Event delegation is the process of using event bubbling to handle events at a higher level in the DOM than the element on which the event originated.</p>
-            </div>
-            <div class="w-386 bg-white mx-auto rounded-lg">
-                <h1 class="p-3 text-2xl font-bold">Question–4: What is event bubbling in the DOM?
-                </h1>
-                <hr class="border-t-2 border-dashed border-gray-300 my-4">
-                <p class="p-3 text-2xl text-black/50">Event bubbling is a type of DOM event propagation which allows centralized event management by propagating events up the DOM tree, simplifying handling across hierarchical structures.</p>
-            </div>
-            <div class="w-386 bg-white mx-auto rounded-lg">
-                <h1 class="p-3 text-2xl font-bold">Question–5: How do you create, add, and remove elements using JavaScript?</h1>
-                <hr class="border-t-2 border-dashed border-gray-300 my-4">
-                <p class="p-3 text-2xl text-black/50">this is how elements can be created, added and removed using javascript: <br> element = document.getElementById("btn"); <br>
-                  const node = document.createElement("div"); <br>
-                  node.textContent = "This is a new div"; <br>
-                  element.appendChild(node); <br>
-                  element.remove();</p>
-            </div>
-        </div>
-        <script src="./script.js"></script>
-
-</body>
+          getElementsByTagName() <br />
+          getElementsByClassName() <br />
+          getElementById() <br />
+          querySelector() <br />
+          querySelectorAll()
+        </p>
+      </div>
+      <div class="w-386 bg-white mx-auto rounded-lg">
+        <h1 class="p-3 text-2xl font-bold">
+          Question–2: What is the difference between innerHTML, innerText, and
+          textContent?
+        </h1>
+        <hr class="border-t-2 border-dashed border-gray-300 my-4" />
+        <p class="p-3 text-2xl text-black/50">
+          innerHTML is used to set or get HTML content of an element. <br />
+          innerText is used to set or get text content of an element. <br />
+          innerContent is used to set or get text content of a specific node and
+          its decendents.
+        </p>
+      </div>
+      <div class="w-386 bg-white mx-auto rounded-lg">
+        <h1 class="p-3 text-2xl font-bold">
+          Question–3: What is event delegation in the DOM?
+        </h1>
+        <hr class="border-t-2 border-dashed border-gray-300 my-4" />
+        <p class="p-3 text-2xl text-black/50">
+          Event delegation is the process of using event bubbling to handle
+          events at a higher level in the DOM than the element on which the
+          event originated.
+        </p>
+      </div>
+      <div class="w-386 bg-white mx-auto rounded-lg">
+        <h1 class="p-3 text-2xl font-bold">
+          Question–4: What is event bubbling in the DOM?
+        </h1>
+        <hr class="border-t-2 border-dashed border-gray-300 my-4" />
+        <p class="p-3 text-2xl text-black/50">
+          Event bubbling is a type of DOM event propagation which allows
+          centralized event management by propagating events up the DOM tree,
+          simplifying handling across hierarchical structures.
+        </p>
+      </div>
+      <div class="w-386 bg-white mx-auto rounded-lg">
+        <h1 class="p-3 text-2xl font-bold">
+          Question–5: How do you create, add, and remove elements using
+          JavaScript?
+        </h1>
+        <hr class="border-t-2 border-dashed border-gray-300 my-4" />
+        <p class="p-3 text-2xl text-black/50">
+          this is how elements can be created, added and removed using
+          javascript: <br />
+          element = document.getElementById("btn"); <br />
+          const node = document.createElement("div"); <br />
+          node.textContent = "This is a new div"; <br />
+          element.appendChild(node); <br />
+          element.remove();
+        </p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>
